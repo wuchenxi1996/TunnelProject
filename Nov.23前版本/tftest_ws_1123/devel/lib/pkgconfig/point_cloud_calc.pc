@@ -1,0 +1,8 @@
+prefix=/home/pibot/Documents/tftest_ws/devel
+
+Name: point_cloud_calc
+Description: Description of point_cloud_calc
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pibot/Documents/tftest_ws/devel/lib 
+Requires: 

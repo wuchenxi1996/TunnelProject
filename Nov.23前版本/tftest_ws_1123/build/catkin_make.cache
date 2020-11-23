@@ -1,0 +1,2 @@
+point_cloud_calc:tf_pub
+-DCATKIN_DEVEL_PREFIX=/home/pibot/Documents/tftest_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pibot/Documents/tftest_ws/install -G Unix Makefiles

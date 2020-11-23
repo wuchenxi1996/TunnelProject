@@ -1,0 +1,11 @@
+<launch>
+  <arg name="lidar" default="$(env PIBOT_LIDAR)" doc="lidar type [rplidar, eai-x4, eai-g4]"/>
+  <include file="$(find pibot_bringup)/launch/robot_with_imu.launch"/>
+  <node name="point_cloud_calc_1" pkg="point_cloud_calc" type="point_cloud_calc" output="screen">
+  	<param name="time" value="25.0" type="double"/>
+  </node>
+  <node pkg="point_cloud_calc" name="spi_read_filtered" type="spi_read_filtered.py" />
+  
+  
+  <!--include file="$(find pibot_bringup)/launch/scan_filter.launch"/-->
+</launch>
